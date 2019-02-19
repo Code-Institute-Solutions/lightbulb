@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Light switches</title>
+</head>
+<body>
+    <button onclick="switchOn()">Switch on</button>
+    <img id="lightbulb" src="img/bulboff.gif" width="100">
+    <button onclick="switchOff()">Switch off</button>
+    <script>
+        function switchOn() {
+            let image = document.getElementById("lightbulb");
+            image.src = "img/bulbon.gif"
+        }
+        
+        function switchOff() {
+            let image = document.getElementById("lightbulb");
+            image.src = "img/bulboff.gif"
+        }
+    </script>
+</body>
+</html>
